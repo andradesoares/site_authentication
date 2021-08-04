@@ -1,15 +1,17 @@
 {
-  "name": "CodeWorkrAuthentication",
+  "name": "authentication",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
   },
   "keywords": [],
   "author": "CodeWorkr",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.17.1",
     "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.3",
@@ -17,6 +19,15 @@
     "express-handlebars": "^3.0.0",
     "express-messages": "^1.0.1",
     "express-session": "^1.15.2",
-    "morgan": "^1.8.1"
+    "joi": "^17.4.2",
+    "mongoose": "^5.13.5",
+    "morgan": "^1.8.1",
+    "nodemailer": "^6.6.3",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "randomstring": "^1.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
   }
 }
